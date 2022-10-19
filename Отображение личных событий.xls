@@ -1,0 +1,131 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta name="author" content="dev.sitechco.ru" />
+    </head>
+<table  border="1">
+    <tr>
+        <td colspan="4">Название (Аббр.): Отображение личных событий (ОЛС)</td>
+    </tr>
+    <tr>
+        <td colspan="4">Описание: </td>
+    </tr>
+         <tr>
+        <td colspan="4">Готовность: 0 </td>
+    </tr>
+            <tr>
+        <td colspan="4">Статус: Не согласован </td>
+    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Группа тестов без названия</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            1        </td>
+        <td>
+            Средний        </td>
+        <td>Два личных события в одном слоте</td>
+                <td>Их ширина делится пополам</td>
+                    </tr>
+        <tr>
+        <td>
+            2        </td>
+        <td>
+            Средний        </td>
+        <td>Личные события с одним временем старта, но разной длительностью</td>
+                <td>Cобытие с длительностью больше будет находиться сверху</td>
+                    </tr>
+        <tr>
+        <td>
+            3        </td>
+        <td>
+            Средний        </td>
+        <td>Личные события отсортированы по длительности</td>
+                <td>События будут сортированы по возрастанию длительности по времени</td>
+                    </tr>
+        <tr>
+        <td>
+            4        </td>
+        <td>
+            Средний        </td>
+        <td>События которые идут позже по времени</td>
+                <td>Отображаются выше событий которые идут раньше и находятся в конце цепочки</td>
+                    </tr>
+        <tr>
+        <td>
+            5        </td>
+        <td>
+            Средний        </td>
+        <td>Отображение занимаемого событием места</td>
+                <td>Если нет конфликтующих событий слева и есть место для минимальной ширины, то событие встает на это место на минимальную ширину или сколько доступно.</td>
+                    </tr>
+        <tr>
+        <td>
+            6        </td>
+        <td>
+            Средний        </td>
+        <td>Пересекающиеся события у которых время начала различается больше, чем на 20 минут.</td>
+                <td>Накладываются друг на друга → событие, которое начинается позже, смещается вниз и при этом может накладываться больше, чем на 20% (10px от левого края верхнего события).</td>
+                    </tr>
+        <tr>
+        <td>
+            7        </td>
+        <td>
+            Средний        </td>
+        <td>Большое количество пересекающихся событий у которых время начала различается больше чем на 20 минут</td>
+                <td>Они все ложатся на большое событие. Если нет слева конфликтующих событий, но не хватает места для минимальной ширины, то событие уходит в самый конец цепочки.</td>
+                    </tr>
+        <tr>
+        <td>
+            8        </td>
+        <td>
+            Средний        </td>
+        <td>Количество занимаемого пространства пересекающихся событий у которых время начала различается больше, чем на 20 минут.</td>
+                <td>Если событие накладывается на другое событие, то оно занимает столько ширины, сколько возможно</td>
+                    </tr>
+        <tr>
+        <td>
+            9        </td>
+        <td>
+            Средний        </td>
+        <td>Пересекающиеся события с разницей меньше чем 20 минут</td>
+                <td>Если одно событие не занимает больше чем 40% от другого, то их можно наложить друг на друга</td>
+                    </tr>
+        <tr>
+        <td>
+            10        </td>
+        <td>
+            Средний        </td>
+        <td>Наложение одного события на другое</td>
+                <td>У события которые накладывается сверху появляется белая обводка</td>
+                    </tr>
+            </table>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> 
+(function (d, w, c) { (w[c] = w[c] || []).push(function() {
+	try { w.yaCounter43980704 = new Ya.Metrika({
+			id:43980704,
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		}); }
+	catch(e) { } });
+	var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); };
+	s.type = "text/javascript"; s.async = true;
+	s.src = "https://mc.yandex.ru/metrika/watch.js";
+	if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); }
+	else { f(); } })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43980704" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
